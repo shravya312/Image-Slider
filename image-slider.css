@@ -1,0 +1,47 @@
+.slider-container{
+    width: 500px;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 1.6vh;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: wheat;
+}
+.image-container{
+    display: flex;
+    transition: transform .4s ease-in-out;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+@media screen and (max-width:581px)  {
+    .slider-container{
+        width: 90%;
+    }
+}
+.next{
+    right: 10px;
+}
+.prev{
+    left: 10px;
+}
+.btn:hover{
+    opacity: 1;
+}
